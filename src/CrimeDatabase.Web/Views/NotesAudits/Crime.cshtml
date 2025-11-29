@@ -1,0 +1,31 @@
+﻿@model CrimeDatabase.Web.ViewModels.NotesAudits.CrimeAuditsViewModel
+
+@{
+	ViewData["Title"] = "Notes Audits";
+}
+
+<h2>Audits for Crime @Model.Id</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(a => a.NotesAudits.First().CrimeId)</th>
+            <th>@Html.DisplayNameFor(a => a.NotesAudits.First().OriginalNotes)</th>
+            <th>@Html.DisplayNameFor(a => a.NotesAudits.First().UpdatedNotes)</th>
+            <th>@Html.DisplayNameFor(a => a.NotesAudits.First().ChangedAt)</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var c in Model.NotesAudits)
+        {
+            <tr>
+                <td>@c.CrimeId</td>
+                <td>@c.OriginalNotes</td>
+                <td>@c.UpdatedNotes</td>
+                <td>@c.ChangedAt</td>
+            </tr>
+        }
+    </tbody>
+</table>

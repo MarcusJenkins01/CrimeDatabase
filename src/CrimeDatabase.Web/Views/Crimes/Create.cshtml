@@ -1,0 +1,46 @@
+﻿@model CrimeDatabase.Web.ViewModels.Crimes.CreateCrimeViewModel
+
+@{
+    ViewData["Title"] = "Record Crime";
+}
+
+<h2>Record a New Crime</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="CrimeDate" class="form-label"></label>
+        <input asp-for="CrimeDate" class="form-control" />
+        <span asp-validation-for="CrimeDate" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Location" class="form-label"></label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="VictimName" class="form-label"></label>
+        <input asp-for="VictimName" class="form-control" />
+        <span asp-validation-for="VictimName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CrimeType" class="form-label"></label>
+        <select asp-for="CrimeType" asp-items="ViewBag.CrimeTypes" class="form-select"></select>
+        <span asp-validation-for="CrimeType" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Notes" class="form-label"></label>
+        <textarea asp-for="Notes" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Notes" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}

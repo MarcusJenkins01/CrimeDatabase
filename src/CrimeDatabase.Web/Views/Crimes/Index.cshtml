@@ -1,0 +1,48 @@
+﻿@model IEnumerable<CrimeDatabase.Web.ViewModels.Crimes.IndexCrimeViewModel>
+
+@{
+    ViewData["Title"] = "Crime Records";
+}
+
+<h2>Crime Records</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Record New Crime</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(c => c.CrimeDate)</th>
+            <th>@Html.DisplayNameFor(c => c.Location)</th>
+            <th>@Html.DisplayNameFor(c => c.VictimName)</th>
+            <th>@Html.DisplayNameFor(c => c.CrimeType)</th>
+            <th>@Html.DisplayNameFor(c => c.Notes)</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.CrimeDateDisplay</td>
+                <td>@c.Location</td>
+                <td>@c.VictimName</td>
+                <td>@c.CrimeTypeDisplay</td>
+                <td>@c.Notes</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@c.Id" class="btn btn-sm btn-warning">
+                        Edit Notes
+                    </a>
+                </td>
+                <td>
+                    <a asp-controller="NotesAudits" asp-action="Crime" asp-route-id="@c.Id" class="btn btn-sm btn-warning">
+                        View Audits
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
