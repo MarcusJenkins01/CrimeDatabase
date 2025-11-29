@@ -27,6 +27,7 @@ namespace CrimeDatabase.Web.ViewModels.Crimes
         public CrimeType CrimeType { get; set; }
 
         [Display(Name = "Notes")]
+        [StringLength(2000)]
         public string Notes { get; set; } = string.Empty;
     }
 }
