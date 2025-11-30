@@ -35,16 +35,16 @@ The integration tests do not require user secrets since the database is created 
 
 # Sample Screenshots
 ### Creation of Crimes
-<img width="2560" height="1528" alt="Screenshot 2025-11-29 141922" src="https://github.com/user-attachments/assets/bb3c1d66-4032-4c75-b3e4-598a3fd462a2" />
+<img width="2560" height="1528" alt="Screenshot 2025-11-30 212006" src="https://github.com/user-attachments/assets/11ad0219-ea1a-4ca2-a15c-bf53d2edc231" />
 
 ### Viewing All Crimes
-<img width="2560" height="1528" alt="Screenshot 2025-11-29 153410" src="https://github.com/user-attachments/assets/09d61397-d4a6-4a7a-8c39-17891c01cc6e" />
+<img width="2560" height="1528" alt="Screenshot 2025-11-30 212039" src="https://github.com/user-attachments/assets/cdded77c-c226-42e3-ad62-ae2497f600ed" />
 
 ### Editing a Crime's Notes
-<img width="2560" height="1528" alt="Screenshot 2025-11-29 153826" src="https://github.com/user-attachments/assets/2d7a0082-ea29-41a4-a54b-53001c239578" />
+<img width="2560" height="1528" alt="Screenshot 2025-11-30 212129" src="https://github.com/user-attachments/assets/f5d6663c-4673-410f-9d43-b2fb327294e8" />
 
 ### Viewing Audits for a Specific Crime
-<img width="2560" height="1528" alt="Screenshot 2025-11-29 153916" src="https://github.com/user-attachments/assets/98acfcf5-fdda-450c-9bb5-17bbca725766" />
+<img width="2560" height="1528" alt="Screenshot 2025-11-30 212201" src="https://github.com/user-attachments/assets/b786bb2d-d70f-4c52-a038-77dfe1073a90" />
 
 ### Viewing All Audits
-<img width="2560" height="1528" alt="Screenshot 2025-11-29 153951" src="https://github.com/user-attachments/assets/3e62abf1-52c4-4c75-a31c-c59a63ec2b26" />
+<img width="2560" height="1528" alt="Screenshot 2025-11-30 212252" src="https://github.com/user-attachments/assets/54480013-b973-4eaa-aeda-5692fecf1c0e" />
